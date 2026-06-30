@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tablero PP5 · Desintegración Social VIS/VIP · Rebolo · GESEG</title>
+<title>Tablero PP6 · Control Territorial por Grupos Ilegales · Rebolo · GESEG</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
@@ -200,7 +200,7 @@ canvas{max-width:100%;}
     </div>
     <div class="tb-divider"></div>
     <div>
-      <div class="tb-title">Tablero de Control Estratégico · PP5</div>
+      <div class="tb-title">Tablero de Control Estratégico · PP6</div>
       <div class="tb-loc">📍 Barrio Rebolo · Localidad Suroriente · Barranquilla 2026</div>
     </div>
   </div>
@@ -244,7 +244,7 @@ canvas{max-width:100%;}
       <div class="kpi-icon">📊</div>
       <div class="kpi-label">Score promedio</div>
       <div class="kpi-num" id="kpi-score">—</div>
-      <div class="kpi-sub">de 66 puntos máx.</div>
+      <div class="kpi-sub">de 24 puntos máx.</div>
     </div>
     <div class="kpi-card" style="--kpi-color:var(--baja)">
       <div class="kpi-icon">📍</div>
@@ -260,7 +260,7 @@ canvas{max-width:100%;}
       <div class="card-hdr">
         <div class="card-hdr-left">
           <div class="c-ico ci-blue">🗺️</div>
-          <div><div class="card-tag">Georreferenciación · Visitas de campo</div><div class="card-title">Distribución espacial de levantamientos PP5 · Barrio Rebolo</div></div>
+          <div><div class="card-tag">Georreferenciación · Visitas de campo</div><div class="card-title">Distribución espacial de levantamientos PP6 · Barrio Rebolo</div></div>
         </div>
         <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
           <span style="font-size:.7em;color:var(--baja)">⬤ Baja</span>
@@ -298,7 +298,7 @@ canvas{max-width:100%;}
             <div class="sem-level" id="semLevel">CRÍTICA</div>
           </div>
           <div class="sem-score" id="semScore">—</div>
-          <div class="sem-score-lbl">Score promedio / 66 puntos</div>
+          <div class="sem-score-lbl">Score promedio / 24 puntos</div>
           <div class="sem-desc" id="semDesc">Cargando...</div>
         </div>
       </div>
@@ -329,7 +329,7 @@ canvas{max-width:100%;}
       <div class="card-hdr">
         <div class="card-hdr-left">
           <div class="c-ico ci-red">⚠️</div>
-          <div><div class="card-tag">Las 22 manifestaciones</div><div class="card-title">Nivel de presencia promedio — Desintegración Social VIS/VIP</div></div>
+          <div><div class="card-tag">Las 8 manifestaciones</div><div class="card-title">Nivel de presencia promedio — Control Territorial por Grupos Ilegales</div></div>
         </div>
         <span class="card-badge" style="background:var(--crit-bg);color:var(--crit);font-size:.68em;">0=No presente · 3=Alta</span>
       </div>
@@ -380,7 +380,7 @@ canvas{max-width:100%;}
         <div class="c-ico ci-gold">🎯</div>
         <div><div class="card-tag">Motor de respuesta estratégica</div><div class="card-title">Recomendaciones automáticas basadas en el diagnóstico territorial</div></div>
       </div>
-      <span class="card-badge" style="background:var(--gold-bg);color:var(--gold);font-size:.7em;">Generadas desde los datos PP5</span>
+      <span class="card-badge" style="background:var(--gold-bg);color:var(--gold);font-size:.7em;">Generadas desde los datos PP6</span>
     </div>
     <div class="card-body">
       <div class="resp-grid" id="respGrid">
@@ -393,10 +393,10 @@ canvas{max-width:100%;}
 
 <div class="footer">
   <div>
-    <strong>GESEG</strong> · Tablero PP5 · Desintegración Social VIS/VIP · Barrio Rebolo · OSCC Barranquilla 2026<br>
+    <strong>GESEG</strong> · Tablero PP6 · Control Territorial por Grupos Ilegales · Barrio Rebolo · OSCC Barranquilla 2026<br>
     <span style="font-size:.85em;color:var(--ink3);">
       Autoría: Omar Rubiano Castro · CONVIVE 360 · Alcaldía Local de Barranquilla<br>
-      Ficha de levantamiento: PP5 · Desintegración Social VIS/VIP · 22 manifestaciones · Score máx. 66 pts
+      Ficha de levantamiento: PP6 · Control Territorial por Grupos Ilegales · 8 manifestaciones · Score máx. 24 pts
     </span>
   </div>
   <div>Actualización automática cada 5 min · Uso institucional</div>
@@ -427,45 +427,17 @@ const M_FIELDS = [
   'm5_nivel',
   'm6_nivel',
   'm7_nivel',
-  'm8_nivel',
-  'm9_nivel',
-  'm10_nivel',
-  'm11_nivel',
-  'm12_nivel',
-  'm13_nivel',
-  'm14_nivel',
-  'm15_nivel',
-  'm16_nivel',
-  'm17_nivel',
-  'm18_nivel',
-  'm19_nivel',
-  'm20_nivel',
-  'm21_nivel',
-  'm22_nivel'
+  'm8_nivel'
 ];
 const M_LABELS = [
-  'Intermediarios Bloquean',
-  'Hacinamiento Crítico',
-  'Uso Informal Comunal',
-  'Microtráfico Zonas Comunes',
-  'Ausencia Identidad',
-  'Estigma Vecinos Externos',
-  'Desorden/Desaseo',
-  'Fragmentación Entre Bloques',
-  'Activ. Ilegales Equipamientos',
-  'Percepción Externa Negativa',
-  'Incumpl. Propiedad Horiz.',
-  'Fragmentación Proy. Ciudad',
-  'NNA Múltiples Riesgos',
-  'Familias Disfuncionales',
-  'Abandono Apartamentos',
-  'Ocupación Ilegal Abandonados',
-  'Desconfianza Autoridades',
-  'Baja Preserv. Equipamientos',
-  'Múltiples Operadores',
-  'Violencia Cotidiana',
-  'Baja Integración Urbana',
-  'Visibilidad Mediática Neg.'
+  'Servicios Públicos Limitados',
+  'Ausencia Indisciplina Social',
+  'Silencio ante Delitos',
+  'Autoridad Reconocida (Ilegal)',
+  'Homicidios/Sicariato',
+  'Ocupación Ilegal Viviendas',
+  'Desplazamiento Intraurbano',
+  'Sin Demanda Inst.'
 ];
 const URG_COLOR = {BAJA:'#1A7A4A',MEDIA:'#E06B1A',ALTA:'#C0392B','CRÍTICA':'#8E2418'};
 const URG_CLASS = {BAJA:'up-baja',MEDIA:'up-media',ALTA:'up-alta','CRÍTICA':'up-critica'};
@@ -573,7 +545,7 @@ async function cargarDatos() {
   setStatus('loading', 'Conectando...');
   $i('loadingOverlay').classList.add('vis');
 
-  const base = SCRIPT_URL + (SCRIPT_URL.includes('?') ? '&' : '?') + 'action=getData&pp=5';
+  const base = SCRIPT_URL + (SCRIPT_URL.includes('?') ? '&' : '?') + 'action=getData&pp=6';
   let json = null, lastErr = '';
 
   try {
@@ -767,13 +739,13 @@ function renderKPIs(m) {
 function renderSemaforo(m) {
   const pc = pct(m.urgDist['CRÍTICA'],m.total), pa = pct(m.urgDist.ALTA,m.total);
   let n,i,c,d;
-  if (pc>=20||m.avgScore>=38.3) {n='CRÍTICA';i='🔴';c='critica';d=`${pc}% CRÍTICOS · Activación inmediata de protocolos.`;}
-  else if (pc>=10||pa>=30||m.avgScore>=27.7) {n='ALTA';i='🟠';c='alta';d=`${pc+pa}% en estado alto o crítico.`;}
-  else if (pa>=15||m.avgScore>=16.5) {n='MEDIA';i='🟡';c='media';d=`${pa}% ALTO. Intervención programada recomendada.`;}
+  if (pc>=20||m.avgScore>=13.9) {n='CRÍTICA';i='🔴';c='critica';d=`${pc}% CRÍTICOS · Activación inmediata de protocolos.`;}
+  else if (pc>=10||pa>=30||m.avgScore>=10.1) {n='ALTA';i='🟠';c='alta';d=`${pc+pa}% en estado alto o crítico.`;}
+  else if (pa>=15||m.avgScore>=6.0) {n='MEDIA';i='🟡';c='media';d=`${pa}% ALTO. Intervención programada recomendada.`;}
   else {n='BAJA';i='🟢';c='baja';d='Nivel bajo. Monitoreo periódico recomendado.';}
   $i('semRing').className='sem-ring '+c;
   $i('semIco').textContent=i; $i('semLevel').textContent=n;
-  $i('semScore').textContent=m.avgScore.toFixed(1)+'/66'; $i('semDesc').textContent=d;
+  $i('semScore').textContent=m.avgScore.toFixed(1)+'/24'; $i('semDesc').textContent=d;
 }
 
 function renderDonut(m) {
@@ -859,7 +831,7 @@ function renderMapPoints(m) {
     });
 
     // Popup rico
-    const pctS = Math.round(pt.score/66*100);
+    const pctS = Math.round(pt.score/24*100);
     const barHtml = `<div style="background:rgba(0,0,0,.08);border-radius:3px;height:5px;overflow:hidden;margin-top:4px;"><div style="background:linear-gradient(90deg,#1A7A4A,#E06B1A,#8E2418);width:${pctS}%;height:100%;border-radius:3px;"></div></div>`;
     const sName = pt.barrio.includes('—') ? pt.barrio.split('—').pop().trim() : pt.barrio||'Rebolo';
     const emojiUrg = pt.urgencia==='CRÍTICA'?'🔴':pt.urgencia==='ALTA'?'🟠':pt.urgencia==='MEDIA'?'🟡':'🟢';
@@ -871,7 +843,7 @@ function renderMapPoints(m) {
         <div style="display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:20px;font-size:10px;font-weight:700;background:${color}22;color:${color};border:1px solid ${color}44;margin-bottom:8px;">
           ${emojiUrg} ${pt.urgencia}
         </div>
-        <div style="font-size:11px;color:rgba(255,255,255,.45);margin-bottom:1px;">Score: ${pt.score}/66</div>
+        <div style="font-size:11px;color:rgba(255,255,255,.45);margin-bottom:1px;">Score: ${pt.score}/24</div>
         ${barHtml}
         <div style="font-size:10.5px;color:rgba(255,255,255,.5);line-height:1.6;margin-top:9px;border-top:1px solid rgba(255,255,255,.08);padding-top:8px;">${pt.conclusion}</div>
         <div style="font-size:9px;color:rgba(255,255,255,.2);margin-top:6px;">📍 ${pt.lat.toFixed(6)}, ${pt.lng.toFixed(6)}</div>
@@ -914,7 +886,7 @@ function renderAlertas(m) {
       <td class="mono">${r.codigo_ficha||'—'}</td>
       <td>${fmtDate(r.fecha)}</td>
       <td style="max-width:130px;overflow:hidden;text-overflow:ellipsis;">${trunc(r.barrio_sector,32)}</td>
-      <td><div class="score-bar-wrap"><div class="score-bar"><div class="score-bar-fill" style="width:${(s/66*100).toFixed(0)}%"></div></div><span style="font-size:.78em;font-weight:700;min-width:26px;color:var(--ink)">${s}</span></div></td>
+      <td><div class="score-bar-wrap"><div class="score-bar"><div class="score-bar-fill" style="width:${(s/24*100).toFixed(0)}%"></div></div><span style="font-size:.78em;font-weight:700;min-width:26px;color:var(--ink)">${s}</span></div></td>
       <td style="color:${URG_COLOR[getUrgKey(r.m1_nivel)]||'var(--ink3)'};">${r.m1_nivel||'—'}</td>
       <td style="color:${URG_COLOR[getUrgKey(r.m2_nivel)]||'var(--ink3)'};">${r.m2_nivel||'—'}</td>
       <td style="color:${URG_COLOR[getUrgKey(r.m3_nivel)]||'var(--ink3)'};">${r.m3_nivel||'—'}</td>
